@@ -1,0 +1,41 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Contact Management API",
+    "description": "API description in Markdown.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Ahmad Yogi",
+      "url": "localhost:8080/api/v1/contact",
+      "email": "aslibojonegoro.1@gmail.com"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://api.example.com",
+      "variables": {
+        "env": {
+          "default": "development",
+          "enum": ["production", "staging", "development"]
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/users": {
+      "get": {
+        "summary": "Returns a list of users.",
+        "description": "Optionaal extended description in Markdown.",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
